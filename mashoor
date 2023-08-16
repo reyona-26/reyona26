@@ -1,0 +1,12 @@
+essential Git commands:
+
+```
+**Basic Git Commands**
+
+- **Clone a Repository:**
+  git clone <repository_url>
+
+- **Add & Commit Changes:**
+  git add .
+  git commit -m "Commit message"
+

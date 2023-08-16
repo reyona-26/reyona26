@@ -1,0 +1,29 @@
+Certainly! Git is a powerful version control system that allows you to track changes in your codebase over time. Git "notes" are a way to attach additional information or metadata to a commit. Here are some common Git commands related to working with notes:
+
+Adding Notes:
+
+To add a note to a commit: git notes add -m "Your note message" <commit_sha>
+Showing Notes:
+
+To show notes for a specific commit: git notes show <commit_sha>
+To show notes for all commits: git log --show-notes=*
+Editing Notes:
+
+To edit a note for a commit:
+git notes edit <commit_sha> (Opens an editor to modify the note)
+Or, git notes edit -m "Updated note message" <commit_sha> (Updates note message directly)
+Removing Notes:
+
+To remove a note from a commit: git notes remove <commit_sha>
+Moving Notes:
+
+To move notes from one commit to another: git notes copy <from_commit> <to_commit>
+To delete notes from a commit and then copy it to another: git notes copy -f <from_commit> <to_commit>
+Listing Notes:
+
+To list notes references: git notes list
+Pushing/Pulling Notes:
+
+To push/pull notes to/from a remote repository:
+git push origin refs/notes/*
+git pull origin refs/notes/*
